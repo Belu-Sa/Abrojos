@@ -1,0 +1,69 @@
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #faf7f0; /* color de fondo general de la página */
+}
+
+.productos-contenedor {
+    display: flex;   /*activa flexbox*/
+    gap: 40px;  /* separa los flex items**/
+    justify-content: center; /* centra flex item en el main axis*/
+    flex-wrap: wrap;
+}
+
+.productos-contenedor > div {
+    width: 300px;
+    background-color: #d8c9b3 ;/*color de fondo de la tarjeta de producto*/
+    padding: 18px; /* espacio interno de la tarjeta */
+    border-radius: 12px; /* redondea las esquinas de la tarjeta */
+}
+
+.productos-contenedor img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;/*redondea las esquinas de las imagenes*/
+}
+
+.productos-contenedor h3 {
+    text-align: center; /* centra el texto de los títulos de las tarjetas */
+    font-size: 28px;/*aumenta tamaño de titulos*/
+    color: #5f653d; /*aplica verde la de identidad visual de Abrojos*/
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #d8c9b3;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+nav a {
+    color: #5f653d;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+nav a:hover { /* Pseudoclase que cambia el color del enlace al pasar el mouse*/
+    color: #c9826b;
+}
+
